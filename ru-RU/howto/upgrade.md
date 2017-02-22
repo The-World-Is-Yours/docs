@@ -1,18 +1,18 @@
 ---
-name: Upgrade
+name: Обновление
 ---
 
-# Upgrade Peach
+# Обновление Peach
 
-If you installed Peach from source code, you can then simply execute following command to upgrade Peach binary:
+Если установка Peach была произведена из исходного кода, то для обновления можно просто выполнить следующую команду:
 
 ```sh
 $ go get -u github.com/peachdocs/peach
 ```
 
-Then in all of your project directories, you should do following steps for each of them:
+В противно случае для каждого каталога, содержащего проекты, необходимо выполнить следующие шаги:
 
-1. Remove current default `conf`, `public` and `templates` directories.
-2. Copy over latest version of those directories.
-3. Check with change log, make sure there is no compatibility issues.
-4. Make necessary changes in your custom `templates` and `public` directories to fix any possible compatibility issues.
+1. Удалить текущий `conf`, `public` и `templates` каталоги;
+2. Скопировать последнюю версию этих каталогов;
+3. Проверить журнал изменений и убедиться, что отсутствуют проблемы с совместимостью;
+4. Внести необходимые изменения в `templates` и `public` каталоги, чтобы устранить любые возможные проблемы совместимости.
