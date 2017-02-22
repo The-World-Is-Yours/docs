@@ -2,31 +2,32 @@
 name: Config Cheat Sheet
 ---
 
-# Configuration Cheat Sheet
+# Дополнительная конфигурация
 
-Before we get started, make sure you know that any change of configuration should be made in `custom/app.ini` file, and uses [INI](https://en.wikipedia.org/wiki/INI_file) syntax.
+Любое изменение конфигурации должно быть сделано `custom/app.ini`, с использование синтаксиса [INI](https://ru.wikipedia.org/wiki/INI_file).
 
-Also, this document only covers config options that are not mentioned anywhere else in the documentation.
+Данный раздел охватывает только те параметры конфигурации, упоминаний о которых не содержится в других разделах.
 
-## Site
+
+## Сайт
 
 ```ini
-# Site level configuration
+# Конфигурация на уровне сайта
 [site]
-# Name for your Peach instance
+# Название сервера Peach
 NAME = Peach Server
-# HTML description meta
+# Метатег Description
 DESC = Peach is a web server for multi-language, real-time update and searchable documentation.
-# Use CDN to load static resources, but Google Font will always be fetched from CDN
+# Использовать CDN для загрузки статических ресурсов, но Google Font будет всегда быть извлечена из CDN
 USE_CDN = true
-# Your site URL to be accessed by other people
+# URL сайта для общего доступа
 URL = http://localhost:5555
 ```
 
-## Page
+## Страницы
 
 ```ini
 [page]
-# Set to false means no home page for the site, and always redirect users to documentation page
+# Показывать стартовую страницу. При значении false стартовая страница не отображается и пользователь перенаправляется в раздел документации
 HAS_LANDING_PAGE = true
 ```
