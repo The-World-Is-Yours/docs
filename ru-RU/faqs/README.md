@@ -4,9 +4,9 @@ name: FAQs
 
 # FAQs
 
-### How do I use reverse proxy with NGINX?
+### Как использовать обратный прокси-сервер с NGINX?
 
-Here is an example of NGINX config section, but values can be different from your situation:
+Ниже приведен пример конфигурации Nginx секции, но значения могут отличаться от вашей ситуации:
 
 ```nginx
 server {
@@ -19,13 +19,13 @@ server {
 }
 ```
 
-### Does my custom directory have to be a Git repository?
+### Должен ли мой пользовательский каталог быть Git-репозиторием?
 
-No, your custom directory does not have to be a Git repository, it's just a best practice to sync and backup your custom things.
+Нет, ваш пользовательский каталог не должен быть Git-репозиторием, это просто хорошая практика для синхронизации и резервного копирования пользовательских данных.
 
-### How do I setup single language documentation?
+### Как настроить документацию для одного языка?
 
-By default, Peach requires you have two language versions of documentation (`en-US` and `zh-CN`); otherwise it will give an error about missing documentation. To use single language documentation, you need to make similar changes in your `custom/app.ini` as follows:
+По умолчанию, Peach требует наличия версий документации для двух языков  (`en-US` и `zh-CN`). В противном случае возникает сообщение об ошибке об отсутствующей документации. Для использования одного языка необходимо внести изменения в файл `custom/app.ini`, например:
 
 ```
 [i18n]
